@@ -1,0 +1,15 @@
+with open("./txt/temp.txt") as f:
+    out=open("./txt/man.txt",mode='w')
+    a=f.read()
+    # a=a.replace("{","\n\t{\n")
+    a=a.replace("{","\n{\n")
+    a=a.replace(",",",\n")
+    # a=a.replace("}","\n\t}")
+    a=a.replace("}","\n}")
+    # a=a.replace("\n\"","\n\t\t\"")
+    a=a.replace("\n\"","\n\"")
+    a=a.replace("]","\n]")
+    a=a.replace("},\n","},")
+    a=a.replace("\",","")
+    out.write(a)
+    out.close
