@@ -1,0 +1,2 @@
+# Get_NEU_Online_Judge
+通过OJ评测编号获取评测代码的输出
